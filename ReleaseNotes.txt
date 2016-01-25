@@ -8,7 +8,8 @@ Release 1.0.0 - 24 Jan 2016
 Mantle EDI Integrations 1.0.0 is the first release as a component
 repository separate from the other components in Mantle Business Artifacts.
 
-This release is based on Moqui Framework 1.6.1.
+This release is based on Moqui Framework 1.6.1, mantle-udm 1.0.0,
+and mantle-usl 1.0.0.
 
 The initial code is from Mantle 1.2.0 and has only minor changes but has
 updates for the new Moqui Framework component management features.
