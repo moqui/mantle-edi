@@ -2,8 +2,7 @@
 
 [![license](http://img.shields.io/badge/license-CC0%201.0%20Universal-blue.svg)](https://github.com/moqui/mantle-edi/blob/master/LICENSE.md)
 [![release](http://img.shields.io/github/release/moqui/mantle-edi.svg)](https://github.com/moqui/mantle-edi/releases)
-[![commits since release](http://img.shields.io/github/commits-since/moqui/mantle-edi/v1.1.0.svg)](https://github.com/moqui/mantle-edi/commits/master)
-[![downloads](http://img.shields.io/github/downloads/moqui/mantle-edi/total.svg)](https://github.com/moqui/mantle-edi/releases)
+[![commits since release](http://img.shields.io/github/commits-since/moqui/mantle-edi/v1.1.1.svg)](https://github.com/moqui/mantle-edi/commits/master)
 
 This component provides services to produce and consume EDI messages using Mantle entities and services, and the Moqui
 Framework System-System Message feature to manage incoming and outgoing integration messages.
