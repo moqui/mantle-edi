@@ -362,8 +362,11 @@ along with this software (see the LICENSE.md file). If not, see
             <!-- PO1: PID, ACK, N9.MSG -->
             <set field="bodyEdiMap.PO1" from="[]"/>
             <set field="lineItemCount" from="0"/>
+            <entity-find entity-name="moqui.basic.EnumGroupMember" list="productItemTypeEgms" cache="true">
+                <econdition field-name="enumGroupEnumId" value="EngItemsProduct"/></entity-find>
+            <set field="productItemTypes" from="productItemTypeEgms*.enumId"/>
             <iterate list="orderItemList" entry="orderItem">
-                <if condition="!(orderItem.itemTypeEnumId in ['ItemProduct', 'ItemInventory', 'ItemAsset'])"><continue/></if>
+                <if condition="!(orderItem.itemTypeEnumId in productItemTypes)"><continue/></if>
 
                 <set field="itemId" from="orderItem.externalItemSeqId ?: orderItem.orderItemSeqId"/>
                 <!-- NOTE: CA is Case; do some sort of mapping from OrderItem.quantityUomId (which comes from

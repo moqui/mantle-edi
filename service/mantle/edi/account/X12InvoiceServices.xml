@@ -103,8 +103,11 @@ along with this software (see the LICENSE.md file). If not, see
             <!-- IT1: IT3, PID, SAC, etc -->
             <set field="bodyEdiMap.IT1" from="[]"/>
             <set field="lineItemCount" from="0"/>
+            <entity-find entity-name="moqui.basic.EnumGroupMember" list="productItemTypeEgms" cache="true">
+                <econdition field-name="enumGroupEnumId" value="EngItemsProduct"/></entity-find>
+            <set field="productItemTypes" from="productItemTypeEgms*.enumId"/>
             <iterate list="invoiceItemList" entry="invoiceItem">
-                <if condition="!(invoiceItem.itemTypeEnumId in ['ItemProduct', 'ItemInventory', 'ItemAsset'])"><continue/></if>
+                <if condition="!(invoiceItem.itemTypeEnumId in productItemTypes)"><continue/></if>
 
                 <!-- get the corresponding OrderItem -->
                 <filter-map-list list="orderItemBillingList" to-list="curOrderItemBillingList">
