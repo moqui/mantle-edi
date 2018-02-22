@@ -196,8 +196,8 @@ along with this software (see the LICENSE.md file). If not, see
                     <if condition="existingOrder">
                         <service-call name="mantle.order.OrderServices.cancel#Order" in-map="[orderId:existingOrder.orderId]"/>
                         <!-- save orderId and orderRevision on SystemMessage -->
-                        <if condition="systemMessageId"><service-call name="update#" in-map="[systemMessageId:systemMessageId,
-                                orderId:existingOrder.orderId, orderRevision:existingOrder.orderRevision]"/></if>
+                        <if condition="systemMessageId"><service-call name="update#moqui.service.message.SystemMessage"
+                                in-map="[systemMessageId:systemMessageId, orderId:existingOrder.orderId, orderRevision:existingOrder.orderRevision]"/></if>
                     </if>
                 </then>
                 <else>
