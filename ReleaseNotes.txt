@@ -2,6 +2,17 @@
 Mantle Business Artifacts - EDI Integrations Release Notes
 
 ===========================================================================
+Release 1.1.2 - Not Yet Released
+===========================================================================
+
+Mantle EDI Integrations 1.1.1 is a patch level update release.
+
+This release is based on Moqui Framework 2.1.1, mantle-udm 2.1.0,
+and mantle-usl 2.1.0.
+
+This version is updated for changes in Moqui Framework and Mantle.
+
+===========================================================================
 Release 1.1.0 - 24 Nov 2016
 ===========================================================================
 
