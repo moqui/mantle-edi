@@ -2,7 +2,7 @@
 Mantle Business Artifacts - EDI Integrations Release Notes
 
 ===========================================================================
-Release 1.1.2 - Not Yet Released
+Release 1.1.2 - 29 Nov 2018
 ===========================================================================
 
 Mantle EDI Integrations 1.1.1 is a patch level update release.
